@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Repository</title>
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+	<div class="left_sidebar">
+		<nav>
+			<ul>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Clients</a></li>
+				<li><a href="#">Contact</a></li>
+				<li class="dropdown"><a href="#">Dropdown <span class="caret">&#9660;</span></a>
+					<ul class="megamenu">
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Search</a></li>
+			</ul>
+		</nav>
+	</div>
+	<!-- JS -->
+	<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function(){
+			$(".dropdown").click(function(){
+				$(this).toggleClass('toggled');
+				$('.megamenu').slideToggle();
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+ul,ol{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.clr::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* ==== START CSS CODE ==== */
+.left_sidebar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 100%;
+	background-color: #111111;
+}
+
+.left_sidebar nav ul li {
+	position: relative;
+}
+
+.left_sidebar nav ul li a{
+	color: #ccc;
+	text-decoration: none;
+	font-weight: bold;
+	display: block;
+	padding: 10px;
+}
+
+.left_sidebar nav ul li a .caret{
+	float: right;
+}
+
+.left_sidebar nav ul li a:hover{
+	color: #fff;
+}
+
+.left_sidebar nav ul .megamenu{
+	display: none;
+}
+
+.left_sidebar nav ul .dropdown.toggled{
+	background-color: #008000;
+	color: #fff;
+}
+
+.left_sidebar nav ul .megamenu{
+	background-color: #262626;
+}
